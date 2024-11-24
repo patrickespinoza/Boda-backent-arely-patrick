@@ -15,7 +15,7 @@ app.post("/confirmar-asistencia", (req, res) => {
   const { name, numPeople } = req.body;
 
   // Ruta del archivo Excel
-  const filePath = path.join(__dirname, "Asistencia.xlsx");
+  const filePath = path.join(__dirname, "tmp", "Asistencia.xlsx");
 
   // Leer el archivo existente o crear uno nuevo
   let workbook;
